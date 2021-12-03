@@ -1,4 +1,4 @@
-function day1(fileName::String)
+function part1(fileName::String)
 	file = open(fileName)
 	input = readlines(file)
 	close(file)
@@ -14,7 +14,7 @@ function day1(fileName::String)
 	println(increasingCounter)
 end
 
-function day2(fileName::String)
+function part2(fileName::String)
 	file = open(fileName)
 	input = readlines(file)
 	close(file)
@@ -35,4 +35,4 @@ function day2(fileName::String)
 	println(increasingCounter)
 end
 
-day2("input.txt")
+part2("input.txt")
