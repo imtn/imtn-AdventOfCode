@@ -42,17 +42,9 @@ function has5inRow(bingoBoardArr, bingoNumArr)
 		for i in 1:5
 			if length(filter(t->t[1] == i, markedTupleSet)) == 5
 				# Bingo!
-				# println("Bingo!")
-				# println(filter(t->t[1] == i, markedTupleSet))
-				# println(board)
-				# println(bingoNumArr)
 				return board
 			elseif length(filter(t->t[2] == i, markedTupleSet)) == 5
 				# Bingo!
-				# println("Bingo!")
-				# println(filter(t->t[2] == i, markedTupleSet))
-				# println(board)
-				# println(bingoNumArr)
 				return board
 			end
 		end
